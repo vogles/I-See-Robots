@@ -19,7 +19,7 @@
 *.user
 *.csproj
 *.unityproj
-
+**/obj
 
 #############
 ## Windows detritus
