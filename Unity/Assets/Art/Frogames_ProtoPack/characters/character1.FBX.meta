@@ -1,0 +1,135 @@
+fileFormatVersion: 2
+guid: 9f5ed5cb45fd33c4d80012b874546424
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: biped
+    100002: character
+    100004: //RootNode
+    100006: gun1
+    100008: gun2
+    100010: hat
+    100012: Head
+    100014: L Calf
+    100016: L Foot
+    100018: L Forearm
+    100020: L Hand
+    100022: L Thigh
+    100024: L UpperArm
+    100026: R Calf
+    100028: R Foot
+    100030: R Forearm
+    100032: R Hand
+    100034: R Thigh
+    100036: R UpperArm
+    100038: rifle
+    100040: shield
+    100042: Spine
+    100044: Spine1
+    100046: Spine2
+    100048: sword
+    100050: wand
+    400000: biped
+    400002: character
+    400004: //RootNode
+    400006: gun1
+    400008: gun2
+    400010: hat
+    400012: Head
+    400014: L Calf
+    400016: L Foot
+    400018: L Forearm
+    400020: L Hand
+    400022: L Thigh
+    400024: L UpperArm
+    400026: R Calf
+    400028: R Foot
+    400030: R Forearm
+    400032: R Hand
+    400034: R Thigh
+    400036: R UpperArm
+    400038: rifle
+    400040: shield
+    400042: Spine
+    400044: Spine1
+    400046: Spine2
+    400048: sword
+    400050: wand
+    2300000: gun1
+    2300002: gun2
+    2300004: hat
+    2300006: rifle
+    2300008: shield
+    2300010: sword
+    2300012: wand
+    3300000: gun1
+    3300002: gun2
+    3300004: hat
+    3300006: rifle
+    3300008: shield
+    3300010: sword
+    3300012: wand
+    4300000: character
+    4300002: hat
+    4300004: sword
+    4300006: rifle
+    4300008: wand
+    4300010: gun1
+    4300012: bazooka
+    4300014: gun2
+    4300016: shield
+    4300018: shield01
+    11100000: //RootNode
+    13700000: character
+  materials:
+    importMaterials: 1
+    materialName: 3
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  userData: 
