@@ -1,15 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ICharState : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+public interface ICharState
+{
+    void Init(Transform _trans, UISprite _sprite, float _movementSpeed);
+    void Jump();
+    void EndJump();
+    void WalkForward();
+    void WalkBackward();
 }

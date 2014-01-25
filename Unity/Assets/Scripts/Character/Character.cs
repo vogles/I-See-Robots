@@ -1,15 +1,66 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
-public class Character : MonoBehaviour {
+public class Character : MonoBehaviour
+{
+    ICharState currentState;
+    List<ICharState> charStates = new List<ICharState>();
+    int stateIndex = 0;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    public UISprite sprite = null;
+    public float walkSpeed = 10f;
+
+    public Vector2 velocity = Vector2.zero;
+    void Start()
+    {
+        charStates.Add(new LandState());
+        charStates.Add(new AquaticState());
+
+        stateIndex = 0;
+        currentState = charStates[stateIndex];
+
+        OnValidate();
+    }
+
+    void Update()
+    {
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+            currentState.WalkForward();
+        else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+            currentState.WalkBackward();
+
+        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
+            currentState.Jump();
+
+        if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            stateIndex++;
+            if (stateIndex >= charStates.Count)
+                stateIndex = 0;
+
+            currentState = charStates[stateIndex];
+        }
+
+        transform.localRotation = Quaternion.identity;
+        velocity = rigidbody2D.velocity;
+        velocity.y = Mathf.Clamp(velocity.y, -2, 2);
+        rigidbody2D.velocity = velocity;
+    }
+
+    void OnValidate()
+    {
+        foreach (ICharState state in charStates)
+            state.Init(transform, sprite, walkSpeed);
+    }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        currentState.EndJump();
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+
+    }
 }
