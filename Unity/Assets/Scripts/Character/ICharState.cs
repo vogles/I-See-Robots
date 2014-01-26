@@ -8,4 +8,7 @@ public interface ICharState
     void EndJump();
     void WalkForward();
     void WalkBackward();
+
+    void UseSkillOne(params object[] args);
+    void UseSkillTwo(params object[] args);
 }

@@ -9,7 +9,6 @@ public class LandState : ICharState
     float jumpHeight = 0f;
 
     bool jumping = false;
-    bool dblJumping = false;
 
     public void Init(Transform _trans, UISprite _sprite, float _movementSpeed, float _jumpHeight)
     {
@@ -21,28 +20,21 @@ public class LandState : ICharState
 
     public void Jump()
     {
-        if (jumping && dblJumping)
+        if (jumping)
             return;
 
         Rigidbody2D rb = trans.rigidbody2D;
 
         if (!jumping)
         {
-            rb.AddForce((Vector2.up * movementSpeed * 10));
+            rb.AddForce((Vector2.up * jumpHeight));
             jumping = true;
-            dblJumping = false;
-        }
-        else
-        {
-            rb.AddForce((Vector2.up * movementSpeed * 10));
-            dblJumping = true;
         }
     }
 
     public void EndJump()
     {
         jumping = false;
-        dblJumping = false;
     }
 
     public void WalkForward()
@@ -75,5 +67,15 @@ public class LandState : ICharState
             scale.x *= -1;
             _trans.localScale = scale;
         }
+    }
+
+    public void UseSkillOne(params object[] args)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public void UseSkillTwo(params object[] args)
+    {
+        throw new System.NotImplementedException();
     }
 }

@@ -13,7 +13,7 @@ public class Character : MonoBehaviour
     public float jumpHeight = 5;
 
     public Vector2 velocity = Vector2.zero;
-    void Start()
+    void Awake()
     {
         charStates.Add(new LandState());
         charStates.Add(new AquaticState());
@@ -58,10 +58,5 @@ public class Character : MonoBehaviour
     void OnCollisionEnter2D(Collision2D other)
     {
         currentState.EndJump();
-    }
-
-    void OnTriggerEnter2D(Collider2D other)
-    {
-
     }
 }
