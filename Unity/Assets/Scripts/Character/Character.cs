@@ -9,7 +9,8 @@ public class Character : MonoBehaviour
     int stateIndex = 0;
 
     public UISprite sprite = null;
-    public float walkSpeed = 10f;
+    public float moveSpeed = 10f;
+    public float jumpHeight = 5;
 
     public Vector2 velocity = Vector2.zero;
     void Start()
@@ -51,7 +52,7 @@ public class Character : MonoBehaviour
     void OnValidate()
     {
         foreach (ICharState state in charStates)
-            state.Init(transform, sprite, walkSpeed);
+            state.Init(transform, sprite, moveSpeed, jumpHeight);
     }
 
     void OnCollisionEnter2D(Collision2D other)
