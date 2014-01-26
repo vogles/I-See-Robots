@@ -38,13 +38,9 @@ public class PoisonCanister : MonoBehaviour
         poisonTrans.localScale = Vector3.one;
         poisonTrans.localPosition = Vector3.zero;
 
+        GameObject.FindObjectOfType<MusicControl>().PlayWin();
         yield return new WaitForSeconds(poisonRainDelay);
 
-        //poison = CFX_SpawnSystem.GetNextObject(poisonRain);
-        //poisonTrans = poison.transform;
-
-        //poisonTrans.parent = transform.parent;
-        //poisonTrans.localScale = Vector3.one;
-        //poisonTrans.position = poisonRainSP.position;
+        // No rain, but I might be able to add the panicking humans!
     }
 }
