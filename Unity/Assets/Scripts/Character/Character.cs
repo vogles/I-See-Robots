@@ -12,8 +12,8 @@ public class Character : MonoBehaviour
     public float moveSpeed = 10f;
     public float jumpHeight = 5;
 
-    public Vector2 velocity = Vector2.zero;
     CFX_SpawnSystem spawnSystem = null;
+    public GameObject shootingPrefab = null;
 
     public ICharState State
     {
@@ -45,9 +45,13 @@ public class Character : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
             SwitchState();
+
+        if (Input.GetKeyDown(KeyCode.Space))
+            currentState.UseSkill(shootingPrefab);
         
         transform.localRotation = Quaternion.identity;
-        velocity = rigidbody2D.velocity;
+
+        Vector2 velocity = rigidbody2D.velocity;
         velocity.y = Mathf.Clamp(velocity.y, -2, 2);
         rigidbody2D.velocity = velocity;
     }

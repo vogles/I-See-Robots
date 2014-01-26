@@ -77,7 +77,17 @@ public class AquaticState : ICharState
         }
     }
 
+    // Shoot bubble
     public void UseSkill(params object[] args)
     {
+        if (args != null )
+        {
+            GameObject projectile = (GameObject)MonoBehaviour.Instantiate((Object)args[0]);
+            Transform projTrans = projectile.transform;
+
+            projTrans.parent = trans.parent;
+            projTrans.localScale = Vector3.one;
+            projTrans.localPosition = trans.localPosition;
+        }
     }
 }
