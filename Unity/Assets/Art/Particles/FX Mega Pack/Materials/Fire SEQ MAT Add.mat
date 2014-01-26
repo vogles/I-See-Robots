@@ -41,12 +41,12 @@ Material:
         second: .078125
       data:
         first:
-          name: _Parallax
-        second: .0199999996
-      data:
-        first:
           name: _InvFade
         second: .99179107
+      data:
+        first:
+          name: _Parallax
+        second: .0199999996
     m_Colors:
       data:
         first:

@@ -253,6 +253,10 @@ Prefab:
       propertyPath: mGradientBottom.b
       value: .786764741
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: fee46b827274e694aa251e2d36700135, type: 2}
+      propertyPath: m_Name
+      value: back
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fee46b827274e694aa251e2d36700135, type: 2}
   m_RootGameObject: {fileID: 536945203}
@@ -304,16 +308,19 @@ MonoBehaviour:
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 84
-  mHeight: 20
+  mHeight: 60
   mDepth: 0
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 4.19999981
+  aspectRatio: 1.39999998
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: 29056518aafb01b49a5b08faf8e30cff, type: 2}
-  mText: 'Musician:'
+  mText: 'Musician:
+
+
+    Parker'
   mFontSize: 20
   mFontStyle: 0
   mEncoding: 1
@@ -359,8 +366,9 @@ GameObject:
   - 114: {fileID: 536945206}
   - 114: {fileID: 536945205}
   - 114: {fileID: 536945210}
+  - 114: {fileID: 536945211}
   m_Layer: 8
-  m_Name: Control - Colored Button
+  m_Name: back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -507,6 +515,21 @@ MonoBehaviour:
   opti: 0
   quit: 0
   back: 1
+--- !u!114 &536945211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 536945203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 110987081098cb44f8e4ba0adeaade85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  start: 0
+  opti: 0
+  quit: 0
+  back: 1
 --- !u!1 &593034601
 GameObject:
   m_ObjectHideFlags: 0
@@ -564,16 +587,21 @@ MonoBehaviour:
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 110
-  mHeight: 100
+  mHeight: 160
   mDepth: 0
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 1.10000002
+  aspectRatio: .6875
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: 29056518aafb01b49a5b08faf8e30cff, type: 2}
   mText: 'Programers:
+
+
+    Ernesto
+
+    Bisma
 
 
 
@@ -655,22 +683,17 @@ MonoBehaviour:
     absolute: 0
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 64
-  mHeight: 100
+  mWidth: 76
+  mHeight: 180
   mDepth: 0
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: .639999986
+  aspectRatio: .422222227
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: 29056518aafb01b49a5b08faf8e30cff, type: 2}
-  mText: 'Artists:
-
-
-
-
-'
+  mText: "Artists:\nHaifa \nChris\nSowmya\nKeley\n\n\n\n"
   mFontSize: 20
   mFontStyle: 0
   mEncoding: 1
@@ -789,9 +812,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: .00625000009, y: .00625000009, z: .00625000009}
   m_Children:
+  - {fileID: 536945204}
   - {fileID: 1013296699}
   - {fileID: 1742293139}
-  - {fileID: 536945204}
   - {fileID: 702649050}
   - {fileID: 593034602}
   - {fileID: 1696836577}
@@ -1113,7 +1136,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 948ddd81ed4745e4d8bd715f38f01dde, type: 2}
+  - {fileID: 2100000, guid: 001fd6fcbbc3695439237de9b17337df, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0

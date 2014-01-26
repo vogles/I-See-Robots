@@ -11,7 +11,7 @@ GameObject:
   - 198: {fileID: 19800004}
   - 199: {fileID: 19900004}
   - 114: {fileID: 11400000}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CFX3_Hit_Electric_A_Air
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,7 +28,7 @@ GameObject:
   - 4: {fileID: 400000}
   - 198: {fileID: 19800000}
   - 199: {fileID: 19900000}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CFX3 Sparkles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,7 +45,7 @@ GameObject:
   - 4: {fileID: 400004}
   - 198: {fileID: 19800002}
   - 199: {fileID: 19900002}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CFX3 Electricity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62,7 +62,7 @@ GameObject:
   - 4: {fileID: 400006}
   - 198: {fileID: 19800006}
   - 199: {fileID: 19900006}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CFX3 Electricity Anim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ Transform:
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: .125, y: .125, z: .125}
   m_Children:
   - {fileID: 400006}
   - {fileID: 400000}
@@ -168,7 +168,7 @@ ParticleSystem:
         m_PostInfinity: 2
       minMaxState: 3
     startSpeed:
-      scalar: 5
+      scalar: 1.25
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -285,7 +285,7 @@ ParticleSystem:
         rgba: 3372209778
       minMaxState: 2
     startSize:
-      scalar: .150000006
+      scalar: .0375000015
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -330,19 +330,19 @@ ParticleSystem:
         m_PreInfinity: 2
         m_PostInfinity: 2
       minMaxState: 3
-    gravityModifier: 1
+    gravityModifier: .25
     inheritVelocity: 0
     maxNumParticles: 1000
   ShapeModule:
     serializedVersion: 2
     enabled: 1
     type: 0
-    radius: .200000003
+    radius: .0500000007
     angle: 35
     length: 5
-    boxX: 1
-    boxY: 1
-    boxZ: 1
+    boxX: .25
+    boxY: .25
+    boxZ: .25
     placementMode: 2
     m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
     randomDirection: 0
@@ -1257,7 +1257,7 @@ ParticleSystem:
         rgba: 3372211855
       minMaxState: 0
     startSize:
-      scalar: .300000012
+      scalar: .075000003
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -1309,12 +1309,12 @@ ParticleSystem:
     serializedVersion: 2
     enabled: 1
     type: 1
-    radius: .100000001
+    radius: .0250000004
     angle: 1
     length: 5
-    boxX: 1
-    boxY: 1
-    boxZ: 1
+    boxX: .25
+    boxY: .25
+    boxZ: .25
     placementMode: 2
     m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
     randomDirection: 0
@@ -2239,7 +2239,7 @@ ParticleSystem:
         rgba: 4293839948
       minMaxState: 0
     startSize:
-      scalar: 2
+      scalar: .5
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -3256,7 +3256,7 @@ ParticleSystem:
         rgba: 3372211855
       minMaxState: 0
     startSize:
-      scalar: .400000006
+      scalar: .100000001
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -3308,12 +3308,12 @@ ParticleSystem:
     serializedVersion: 2
     enabled: 1
     type: 1
-    radius: .349999994
+    radius: .0874999985
     angle: 1
     length: 5
-    boxX: 1
-    boxY: 1
-    boxZ: 1
+    boxX: .25
+    boxY: .25
+    boxZ: .25
     placementMode: 2
     m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
     randomDirection: 0

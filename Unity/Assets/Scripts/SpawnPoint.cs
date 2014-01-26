@@ -13,6 +13,16 @@ public class SpawnPoint : MonoBehaviour
 
     public void Spawn()
     {
+        StartCoroutine(SpawnObjects());
+    }
+
+    IEnumerator SpawnObjects()
+    {
+        while (!CFX_SpawnSystem.AllObjectsLoaded)
+        {
+            yield return null;
+        }
+
         GameObject particles = CFX_SpawnSystem.GetNextObject(spawnSystem.objectsToPreload[0]);
         GameObject player = (GameObject)Instantiate(playerPrefab, transform.position, Quaternion.identity);
 
@@ -25,6 +35,5 @@ public class SpawnPoint : MonoBehaviour
         trans.position = transform.position;
         trans.parent = transform.parent;
         trans.localScale = Vector3.one * 2;
-
     }
 }

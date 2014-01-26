@@ -17,7 +17,7 @@ public class MenuButtons : MonoBehaviour {
 	void OnClick () {
 
 		if (start) {
-			Application.LoadLevel("02_Training");
+			Application.LoadLevel("02_Level");
 		}
 
 		if (opti) {

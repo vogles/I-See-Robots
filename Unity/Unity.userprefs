@@ -1,11 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\MenuButtons.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\NGUI\Scripts\UI\UISpriteAnimation.cs">
     <Files>
-      <File FileName="Assets\Scripts\Character\Character.cs" Line="12" Column="34" />
-      <File FileName="..\..\Dropbox\BlockDude_GD1\Block Dude\Game Day Project_UPDATED\Assets\Scripts\UnitPlayer.cs" Line="14" Column="16" />
-      <File FileName="..\..\Dropbox\BlockDude_GD1\Block Dude\Game Day Project_UPDATED\Assets\Scripts\Unit.cs" Line="50" Column="5" />
-      <File FileName="Assets\Scripts\MenuButtons.cs" Line="16" Column="36" />
+      <File FileName="..\..\Desktop\I-See-Robots-master\Unity\Assets\Scripts\Character\Character.cs" Line="62" Column="16" />
+      <File FileName="Assets\Scripts\Character\BatteryBar.cs" Line="15" Column="3" />
+      <File FileName="Assets\NGUI\Scripts\UI\UISpriteAnimation.cs" Line="149" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -41,7 +41,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -448.195374, y: -255.980743, z: 32}
+  m_LocalPosition: {x: 1217.62695, y: -443.152222, z: 32}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 400002}
@@ -97,7 +97,7 @@ MonoBehaviour:
   sprite: {fileID: 11400002}
   moveSpeed: 10
   jumpHeight: 25
-  velocity: {x: 0, y: 0}
+  shootingPrefab: {fileID: 100002, guid: d66b5c2342f8739459f0f070c807c01e, type: 2}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1

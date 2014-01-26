@@ -40,9 +40,61 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: d92130f1d23191d4c8707e92b40e5d78, type: 2}
   mSprites:
+  - name: batpack_01
+    x: 122
+    y: 2
+    width: 24
+    height: 5
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 4
+    paddingRight: 4
+    paddingTop: 27
+    paddingBottom: 0
+  - name: batpack_02
+    x: 75
+    y: 4
+    width: 24
+    height: 5
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 4
+    paddingRight: 4
+    paddingTop: 27
+    paddingBottom: 0
+  - name: batpack_03
+    x: 49
+    y: 4
+    width: 24
+    height: 5
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 4
+    paddingRight: 4
+    paddingTop: 27
+    paddingBottom: 0
+  - name: batteryEmpty
+    x: 381
+    y: 169
+    width: 32
+    height: 16
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: breakable
-    x: 263
-    y: 173
+    x: 444
+    y: 134
     width: 32
     height: 32
     borderLeft: 0
@@ -54,8 +106,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: breakable - particle 1
-    x: 243
-    y: 152
+    x: 34
+    y: 16
     width: 7
     height: 7
     borderLeft: 0
@@ -67,10 +119,127 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: breakable - particle 2
-    x: 80
-    y: 2
+    x: 43
+    y: 19
     width: 4
     height: 4
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: butn_switch_off
+    x: 428
+    y: 173
+    width: 32
+    height: 10
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 22
+    paddingBottom: 0
+  - name: butn_switch_on
+    x: 83
+    y: 87
+    width: 32
+    height: 6
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 26
+    paddingBottom: 0
+  - name: button - down
+    x: 478
+    y: 134
+    width: 32
+    height: 32
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: button - left
+    x: 376
+    y: 66
+    width: 32
+    height: 32
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: button - right
+    x: 428
+    y: 185
+    width: 32
+    height: 32
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: button - right 1
+    x: 462
+    y: 185
+    width: 32
+    height: 32
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: button - shift
+    x: 49
+    y: 50
+    width: 64
+    height: 32
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: button - space
+    x: 49
+    y: 150
+    width: 64
+    height: 32
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: button - up
+    x: 342
+    y: 134
+    width: 32
+    height: 32
     borderLeft: 0
     borderRight: 0
     borderTop: 0
@@ -94,7 +263,7 @@ MonoBehaviour:
     paddingBottom: 2
   - name: cgrobo2
     x: 122
-    y: 133
+    y: 9
     width: 119
     height: 59
     borderLeft: 0
@@ -106,8 +275,8 @@ MonoBehaviour:
     paddingTop: 16
     paddingBottom: 3
   - name: cgrobo3
-    x: 0
-    y: 60
+    x: 122
+    y: 70
     width: 120
     height: 59
     borderLeft: 0
@@ -119,8 +288,8 @@ MonoBehaviour:
     paddingTop: 27
     paddingBottom: 6
   - name: cgrobo4
-    x: 0
-    y: 121
+    x: 122
+    y: 131
     width: 119
     height: 61
     borderLeft: 0
@@ -145,8 +314,8 @@ MonoBehaviour:
     paddingTop: 20
     paddingBottom: 3
   - name: cloud_large
-    x: 437
-    y: 236
+    x: 472
+    y: 78
     width: 32
     height: 20
     borderLeft: 0
@@ -158,8 +327,8 @@ MonoBehaviour:
     paddingTop: 4
     paddingBottom: 8
   - name: cloud_small
-    x: 471
-    y: 244
+    x: 462
+    y: 171
     width: 26
     height: 12
     borderLeft: 0
@@ -170,6 +339,84 @@ MonoBehaviour:
     paddingRight: 3
     paddingTop: 10
     paddingBottom: 10
+  - name: current1
+    x: 342
+    y: 3
+    width: 31
+    height: 27
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 1
+    paddingRight: 0
+    paddingTop: 3
+    paddingBottom: 2
+  - name: current2
+    x: 478
+    y: 108
+    width: 30
+    height: 24
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 1
+    paddingRight: 1
+    paddingTop: 8
+    paddingBottom: 0
+  - name: deadhuman
+    x: 441
+    y: 65
+    width: 29
+    height: 33
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 34
+    paddingRight: 37
+    paddingTop: 35
+    paddingBottom: 32
+  - name: deadhumanf
+    x: 304
+    y: 78
+    width: 36
+    height: 35
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 34
+    paddingRight: 30
+    paddingTop: 33
+    paddingBottom: 32
+  - name: diagonal
+    x: 342
+    y: 100
+    width: 32
+    height: 32
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: exitButton
+    x: 381
+    y: 187
+    width: 45
+    height: 30
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: green_plant
     x: 243
     y: 161
@@ -184,8 +431,8 @@ MonoBehaviour:
     paddingTop: 1
     paddingBottom: 0
   - name: grobo1
-    x: 0
-    y: 6
+    x: 263
+    y: 204
     width: 39
     height: 52
     borderLeft: 0
@@ -197,8 +444,8 @@ MonoBehaviour:
     paddingTop: 4
     paddingBottom: 0
   - name: grobo2
-    x: 122
-    y: 79
+    x: 263
+    y: 98
     width: 37
     height: 52
     borderLeft: 0
@@ -210,8 +457,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: grobo3
-    x: 80
-    y: 8
+    x: 263
+    y: 152
     width: 39
     height: 50
     borderLeft: 0
@@ -223,8 +470,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 1
   - name: grobo4
-    x: 122
-    y: 26
+    x: 263
+    y: 45
     width: 36
     height: 51
     borderLeft: 0
@@ -236,8 +483,8 @@ MonoBehaviour:
     paddingTop: 4
     paddingBottom: 3
   - name: grobo5
-    x: 41
-    y: 5
+    x: 83
+    y: 95
     width: 37
     height: 53
     borderLeft: 0
@@ -249,8 +496,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 3
   - name: grobo6
-    x: 161
-    y: 2
+    x: 304
+    y: 166
     width: 36
     height: 51
     borderLeft: 0
@@ -262,8 +509,8 @@ MonoBehaviour:
     paddingTop: 4
     paddingBottom: 1
   - name: grobo7
-    x: 199
-    y: 4
+    x: 342
+    y: 168
     width: 37
     height: 49
     borderLeft: 0
@@ -275,8 +522,8 @@ MonoBehaviour:
     paddingTop: 4
     paddingBottom: 2
   - name: grobo8
-    x: 263
-    y: 207
+    x: 304
+    y: 115
     width: 36
     height: 49
     borderLeft: 0
@@ -288,8 +535,8 @@ MonoBehaviour:
     paddingTop: 7
     paddingBottom: 2
   - name: groundTile2
-    x: 263
-    y: 139
+    x: 342
+    y: 66
     width: 32
     height: 32
     borderLeft: 0
@@ -301,10 +548,36 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: groundTileWithoutGrass
-    x: 263
-    y: 105
+    x: 342
+    y: 32
     width: 32
     height: 32
+    borderLeft: 1
+    borderRight: 1
+    borderTop: 1
+    borderBottom: 1
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: happyhumanf
+    x: 263
+    y: 8
+    width: 36
+    height: 35
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 34
+    paddingRight: 30
+    paddingTop: 33
+    paddingBottom: 32
+  - name: lineForBattery
+    x: 243
+    y: 143
+    width: 16
+    height: 16
     borderLeft: 0
     borderRight: 0
     borderTop: 0
@@ -313,9 +586,48 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
+  - name: megamandoor
+    x: 0
+    y: 25
+    width: 47
+    height: 157
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: neutralboyhuman
+    x: 410
+    y: 65
+    width: 29
+    height: 33
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 34
+    paddingRight: 37
+    paddingTop: 35
+    paddingBottom: 32
+  - name: ohnoeslboyhuman
+    x: 410
+    y: 30
+    width: 29
+    height: 33
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 34
+    paddingRight: 37
+    paddingTop: 35
+    paddingBottom: 32
   - name: pink_plant
-    x: 238
-    y: 22
+    x: 103
+    y: 17
     width: 16
     height: 31
     borderLeft: 0
@@ -326,9 +638,35 @@ MonoBehaviour:
     paddingRight: 7
     paddingTop: 1
     paddingBottom: 0
+  - name: playButton
+    x: 447
+    y: 226
+    width: 45
+    height: 30
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: poisonContainer
+    x: 49
+    y: 84
+    width: 32
+    height: 64
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: pushable - pushed
-    x: 263
-    y: 71
+    x: 376
+    y: 134
     width: 32
     height: 32
     borderLeft: 0
@@ -340,8 +678,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: pushable - static
-    x: 263
-    y: 37
+    x: 410
+    y: 134
     width: 32
     height: 32
     borderLeft: 0
@@ -353,8 +691,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: romaid1
-    x: 213
-    y: 55
+    x: 402
+    y: 219
     width: 43
     height: 37
     borderLeft: 0
@@ -366,8 +704,8 @@ MonoBehaviour:
     paddingTop: 5
     paddingBottom: 5
   - name: romaid2
-    x: 161
-    y: 55
+    x: 304
+    y: 219
     width: 50
     height: 37
     borderLeft: 0
@@ -379,34 +717,21 @@ MonoBehaviour:
     paddingTop: 2
     paddingBottom: 3
   - name: romaid3
-    x: 215
-    y: 94
+    x: 356
+    y: 219
     width: 44
     height: 37
     borderLeft: 0
     borderRight: 0
     borderTop: 0
     borderBottom: 0
-    paddingLeft: 3
-    paddingRight: 7
+    paddingLeft: 7
+    paddingRight: 3
     paddingTop: 2
     paddingBottom: 3
-  - name: sky
-    x: 263
-    y: 3
-    width: 32
-    height: 32
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: sromaid
-    x: 161
-    y: 94
+  - name: romaid4
+    x: 49
+    y: 11
     width: 52
     height: 37
     borderLeft: 0
@@ -417,9 +742,48 @@ MonoBehaviour:
     paddingRight: 1
     paddingTop: 1
     paddingBottom: 4
+  - name: skull
+    x: 304
+    y: 7
+    width: 34
+    height: 32
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: sky
+    x: 376
+    y: 100
+    width: 32
+    height: 32
+    borderLeft: 1
+    borderRight: 1
+    borderTop: 1
+    borderBottom: 1
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: surprisedhumanfemale
+    x: 304
+    y: 41
+    width: 36
+    height: 35
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 34
+    paddingRight: 30
+    paddingTop: 33
+    paddingBottom: 32
   - name: water_floor_bottom
-    x: 301
-    y: 224
+    x: 376
+    y: 32
     width: 32
     height: 32
     borderLeft: 0
@@ -431,8 +795,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: water_floor_top
-    x: 335
-    y: 224
+    x: 410
+    y: 100
     width: 32
     height: 32
     borderLeft: 0
@@ -444,21 +808,21 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: water_middle
-    x: 369
-    y: 224
+    x: 444
+    y: 100
     width: 32
     height: 32
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
+    borderLeft: 1
+    borderRight: 1
+    borderTop: 1
+    borderBottom: 1
     paddingLeft: 0
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
   - name: water_platform
-    x: 122
-    y: 3
+    x: 0
+    y: 2
     width: 32
     height: 21
     borderLeft: 0
@@ -470,8 +834,8 @@ MonoBehaviour:
     paddingTop: 11
     paddingBottom: 0
   - name: water_top
-    x: 403
-    y: 231
+    x: 376
+    y: 5
     width: 32
     height: 25
     borderLeft: 0
