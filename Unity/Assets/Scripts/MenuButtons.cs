@@ -6,6 +6,7 @@ public class MenuButtons : MonoBehaviour {
 	public bool start = false;
 	public bool opti = false;
 	public bool quit = false;
+	public bool back = false;
 
 	// Use this for initialization
 	void Start () {
@@ -14,20 +15,22 @@ public class MenuButtons : MonoBehaviour {
 	
 	// Update is called once per frame
 	void OnClick () {
-		//counter++;
-		//print ("Clicked " + counter.ToString () + " times.");
 
 		if (start) {
 			Application.LoadLevel("02_Training");
 		}
 
 		if (opti) {
-			Application.LoadLevel("00_Options");
+			Application.LoadLevel("00_Credits");
 		}
 
 		if (quit) {
 			Application.Quit();
 		}
 
+		if (back) {
+			Application.LoadLevel("01_Title");
+
 	}
+}
 }
