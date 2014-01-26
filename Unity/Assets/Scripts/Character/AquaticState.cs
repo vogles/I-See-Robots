@@ -77,14 +77,7 @@ public class AquaticState : ICharState
         }
     }
 
-
-    public void UseSkillOne(params object[] args)
+    public void UseSkill(params object[] args)
     {
-        throw new System.NotImplementedException();
-    }
-
-    public void UseSkillTwo(params object[] args)
-    {
-        throw new System.NotImplementedException();
     }
 }

@@ -3,9 +3,13 @@
 --- !u!78 &1
 TagManager:
   tags:
-  - Death Trigger
+  - Water Trigger
   - Exit Trigger
   - 
+  - 
+  - props
+  - floor
+  - Pickup
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX

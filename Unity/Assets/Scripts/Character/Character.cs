@@ -13,6 +13,13 @@ public class Character : MonoBehaviour
     public float jumpHeight = 5;
 
     public Vector2 velocity = Vector2.zero;
+    CFX_SpawnSystem spawnSystem = null;
+
+    public ICharState State
+    {
+        get { return currentState; }
+    }
+
     void Awake()
     {
         charStates.Add(new LandState());
@@ -20,7 +27,9 @@ public class Character : MonoBehaviour
 
         stateIndex = 0;
         currentState = charStates[stateIndex];
+        sprite.spriteName = "grobo1";
 
+        spawnSystem = GameObject.FindObjectOfType<CFX_SpawnSystem>();
         OnValidate();
     }
 
@@ -34,15 +43,9 @@ public class Character : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
             currentState.Jump();
 
-        if (Input.GetKeyDown(KeyCode.DownArrow))
-        {
-            stateIndex++;
-            if (stateIndex >= charStates.Count)
-                stateIndex = 0;
-
-            currentState = charStates[stateIndex];
-        }
-
+        if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
+            SwitchState();
+        
         transform.localRotation = Quaternion.identity;
         velocity = rigidbody2D.velocity;
         velocity.y = Mathf.Clamp(velocity.y, -2, 2);
@@ -58,5 +61,18 @@ public class Character : MonoBehaviour
     void OnCollisionEnter2D(Collision2D other)
     {
         currentState.EndJump();
+    }
+
+    void SwitchState()
+    {
+        stateIndex++;
+        if (stateIndex >= charStates.Count)
+            stateIndex = 0;
+
+        currentState = charStates[stateIndex];
+        if (currentState is LandState)
+            sprite.spriteName = "grobo1";
+        else
+            sprite.spriteName = "romaid1";
     }
 }

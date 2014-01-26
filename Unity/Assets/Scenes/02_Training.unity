@@ -144,11 +144,11 @@ MonoBehaviour:
   mFillAmount: 1
   mInvert: 0
   mFillCenter: 1
-  centerType: 1
-  leftType: 1
-  rightType: 1
-  bottomType: 1
-  topType: 1
+  centerType: 2
+  leftType: 2
+  rightType: 2
+  bottomType: 2
+  topType: 2
 --- !u!1 &22183746
 GameObject:
   m_ObjectHideFlags: 0
@@ -1004,7 +1004,7 @@ MonoBehaviour:
   aspectRatio: 1.33333337
   mAtlas: {fileID: 11400000, guid: 2d21619e380401c458cd896eac3d1565, type: 2}
   mSpriteName: sky
-  mType: 2
+  mType: 1
   mFillDirection: 4
   mFillAmount: 1
   mInvert: 0

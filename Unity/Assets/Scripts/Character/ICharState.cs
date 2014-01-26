@@ -9,6 +9,5 @@ public interface ICharState
     void WalkForward();
     void WalkBackward();
 
-    void UseSkillOne(params object[] args);
-    void UseSkillTwo(params object[] args);
+    void UseSkill(params object[] args);
 }
