@@ -9,6 +9,9 @@ public class LandState : ICharState
     float jumpHeight = 0f;
 
     bool jumping = false;
+    bool dashing = false;
+
+    public bool Dashing { get { return dashing; } }
 
     public void Init(Transform _trans, UISprite _sprite, float _movementSpeed, float _jumpHeight)
     {
@@ -69,7 +72,33 @@ public class LandState : ICharState
         }
     }
 
+    /// <summary>
+    /// Punch/smash an object
+    /// </summary>
+    /// <param name="args">
+    /// args[0] = shootingPrefab // For aquatic state
+    /// args[1] = spriteAnim
+    /// args[2] = duration
+    /// args[3] = newMovementSpeed
+    /// </param>
     public void UseSkill(params object[] args)
     {
+        if (args != null)
+            sprite.StartCoroutine(Dash((UISpriteAnimation)args[1], (float)args[2], (float)args[3]));
+    }
+
+    IEnumerator Dash(UISpriteAnimation spriteAnim, float duration, float newMovementSpeed)
+    {
+        dashing = true;
+
+        spriteAnim.namePrefix = "cgrobo";
+        float oldMovementSpeed = movementSpeed;
+        movementSpeed = newMovementSpeed;
+        
+        yield return new WaitForSeconds(duration);
+
+        dashing = false;
+        spriteAnim.namePrefix = "grobo";
+        movementSpeed = oldMovementSpeed;
     }
 }

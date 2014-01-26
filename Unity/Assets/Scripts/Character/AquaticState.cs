@@ -87,7 +87,7 @@ public class AquaticState : ICharState
 
             projTrans.parent = trans.parent;
             projTrans.localScale = Vector3.one;
-            projTrans.localPosition = trans.localPosition;
+            projTrans.localPosition = trans.localPosition + new Vector3(64, 0);
         }
     }
 }

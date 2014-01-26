@@ -11,9 +11,12 @@ public class Character : MonoBehaviour
     public UISprite sprite = null;
     public float moveSpeed = 10f;
     public float jumpHeight = 5;
+    public float dashSpeed = 20f;
+    public float dashDuration = 1f;
 
     CFX_SpawnSystem spawnSystem = null;
     public GameObject shootingPrefab = null;
+    public UISpriteAnimation spriteAnim = null;
 
     public ICharState State
     {
@@ -47,7 +50,7 @@ public class Character : MonoBehaviour
             SwitchState();
 
         if (Input.GetKeyDown(KeyCode.Space))
-            currentState.UseSkill(shootingPrefab);
+            currentState.UseSkill(shootingPrefab, spriteAnim, dashDuration, dashSpeed);
         
         transform.localRotation = Quaternion.identity;
 
@@ -64,7 +67,15 @@ public class Character : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        currentState.EndJump();
+        string otherTag = other.gameObject.tag;
+        if (otherTag == "Ground")
+            currentState.EndJump();
+        else if (otherTag == "Collapsible" && currentState is LandState && (currentState as LandState).Dashing)
+            Destroy(other.gameObject);
+        else if (otherTag == "Switch Trigger" && other.gameObject.name == "Switch 2")
+        {
+            other.gameObject.GetComponent<Switch>().Toggle();
+        }
     }
 
     void SwitchState()
@@ -75,8 +86,8 @@ public class Character : MonoBehaviour
 
         currentState = charStates[stateIndex];
         if (currentState is LandState)
-            sprite.spriteName = "grobo1";
+            spriteAnim.namePrefix = "grobo";
         else
-            sprite.spriteName = "romaid1";
+            spriteAnim.namePrefix = "romaid";
     }
 }

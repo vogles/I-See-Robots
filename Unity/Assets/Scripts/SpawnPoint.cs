@@ -35,5 +35,8 @@ public class SpawnPoint : MonoBehaviour
         trans.position = transform.position;
         trans.parent = transform.parent;
         trans.localScale = Vector3.one * 2;
+
+        GameCamera gameCamera = Camera.main.GetComponent<GameCamera>();
+        gameCamera.target = player.transform;
     }
 }

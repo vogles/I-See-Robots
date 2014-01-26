@@ -28,9 +28,11 @@ public class BubbleProjectile : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Trigger")
+        if (other.tag == "Switch Trigger")
         {
             Destroy(gameObject);
+
+            other.GetComponent<Switch>().Toggle();
         }
     }
 }
