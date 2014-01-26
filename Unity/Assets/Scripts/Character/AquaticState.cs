@@ -76,4 +76,15 @@ public class AquaticState : ICharState
             _trans.localScale = scale;
         }
     }
+
+
+    public void UseSkillOne(params object[] args)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public void UseSkillTwo(params object[] args)
+    {
+        throw new System.NotImplementedException();
+    }
 }
